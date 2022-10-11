@@ -1,0 +1,17 @@
+.calc{
+    position: relative;
+    left: 35%;
+}
+.put {
+    width: 540px;
+    height: 140px;
+    background: rgb(24,31,50);
+    border-radius: 15px;
+    margin: 0 0 10px 0;
+}
+.keyboard{
+    width: 540px;
+    height: 480px;
+    background: rgb(37,45,68);
+    border-radius: 15px;
+}
