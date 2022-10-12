@@ -8,10 +8,54 @@
     background: rgb(24,31,50);
     border-radius: 15px;
     margin: 0 0 10px 0;
+    overflow: hidden;
 }
 .keyboard{
     width: 540px;
     height: 480px;
     background: rgb(37,45,68);
     border-radius: 15px;
+    display: flex;
+}
+button {
+    width: 100px;
+    height: 65px;
+    margin: 15px;
+    font-size: 36px;
+    font-weight: 800;
+    color: rgb(66,72,84);
+}
+.operators {
+    display: grid;
+    align-content: start;
+    position: relative;
+    right: 20px;
+}
+.reset{
+    width: 230px;
+    height: 60px;
+}
+button.enter {
+    width: 230px;
+    position: absolute;
+    height: 60px;
+}
+.display {
+    color: aliceblue;
+    font-size: 80px;
+    text-align: right;
+    margin: 0 30px 0 0;
+    font-weight: 600;
+    margin: 10px 30px 0 0;
+}
+span {
+    font-size: 35px;
+    position: absolute;
+    color: #35ff3573;
+    display: block;
+    top: 150px;
+    margin: 0 0 0 30px;
+}
+h2 {
+    color: aliceblue;
 }

@@ -18,20 +18,7 @@ if(!ops.includes(value)){
     setResult(eval(calc + value).toString());
 }
     }
-    const createDigits = () => {
-      const digits = [];
-
-      for(let i =1; i < 10; i++){
-        digits.push(
-          <button 
-          onClick={() => updateCalc(i.toString())}
-          key={i}>
-            {i}
-            </button>
-        )
-      }
-      return digits;
-    }
+   
   const calculate = () => {
     setCalc(eval(calc).toString());
   }
@@ -65,21 +52,32 @@ if(!ops.includes(value)){
             </div>
             </div>
             <div className='keyboard'>
-              <div className='operators'>
+            <div className='digits'>
+            <button onClick={() => updateCalc('7'.toString())} key='7'>7</button>
+            <button onClick={() => updateCalc('8'.toString())} key='8'>8</button>
+            <button onClick={() => updateCalc('9'.toString())} key='9'>9</button>
+            <button onClick={() => updateCalc('4'.toString())} key='4'>4</button>
+            <button onClick={() => updateCalc('5'.toString())} key='5'>5</button>
+            <button onClick={() => updateCalc('6'.toString())} key='6'>6</button>
+            <button onClick={() => updateCalc('1'.toString())} key='1'>1</button>
+            <button onClick={() => updateCalc('2'.toString())} key='2'>2</button>
+            <button onClick={() => updateCalc('3'.toString())} key='3'>3</button>
+            <button onClick={() => updateCalc('.')}>.</button>
+                  <button onClick={() => updateCalc('0')}>0</button>
                   <button onClick={() => updateCalc('/')}>/</button>
+                  <button className='reset' onClick={resetLast}>RESET</button>
+                  <button className='enter' onClick={ calculate}>=</button>
+                 
+              </div>
+              <div className='operators'>
+                 
                   <button onClick={() => updateCalc('*')}>*</button>
                   <button onClick={() => updateCalc('+')}>+</button>
                   <button onClick={() => updateCalc('-')}>-</button>
                   <button onClick={deleteLast}>DEL</button>
+                  
               </div>
-              <div className='digits'>
-                {createDigits()}
-                  <button onClick={() => updateCalc('0')}>0</button>
-                  <button onClick={() => updateCalc('.')}>.</button>
-                  <button onClick={ calculate}>=</button>
-                  <button onClick={resetLast}>RESET</button>
-                 
-              </div>
+             
 
             </div>
 
