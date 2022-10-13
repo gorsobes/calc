@@ -3,15 +3,15 @@
     left: 35%;
 }
 .put {
-    width: 540px;
-    height: 140px;
+    width: 537px;
+    height: 130px;
     background: rgb(24,31,50);
     border-radius: 15px;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
     overflow: hidden;
 }
 .keyboard{
-    width: 540px;
+    width: 537px;
     height: 480px;
     background: rgb(37,45,68);
     border-radius: 15px;
@@ -19,17 +19,19 @@
 }
 button {
     width: 100px;
-    height: 65px;
-    margin: 15px;
-    font-size: 36px;
+    height: 61px;
+    margin: 30px 0 0 25px;
+    font-size: 35px;
     font-weight: 800;
     color: rgb(66,72,84);
+    border-radius: 10%;
+    background-color: #eae3db;
 }
 .operators {
     display: grid;
     align-content: start;
     position: relative;
-    right: 20px;
+    right: 30px;
 }
 .reset{
     width: 230px;
@@ -42,20 +44,22 @@ button.enter {
 }
 .display {
     color: aliceblue;
-    font-size: 80px;
+    font-size: 56px;
     text-align: right;
-    margin: 0 30px 0 0;
     font-weight: 600;
-    margin: 10px 30px 0 0;
+    margin: 20px 30px 0 0;
 }
 span {
     font-size: 35px;
     position: absolute;
     color: #35ff3573;
     display: block;
-    top: 150px;
+    top: 143px;
     margin: 0 0 0 30px;
 }
 h2 {
     color: aliceblue;
+    position: relative;
+    top: -11px;
+    left: 7px;
 }

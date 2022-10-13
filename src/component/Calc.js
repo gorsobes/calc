@@ -70,12 +70,10 @@ if(!ops.includes(value)){
                  
               </div>
               <div className='operators'>
-                 
-                  <button onClick={() => updateCalc('*')}>*</button>
+                  <button onClick={deleteLast}>DEL</button>
                   <button onClick={() => updateCalc('+')}>+</button>
                   <button onClick={() => updateCalc('-')}>-</button>
-                  <button onClick={deleteLast}>DEL</button>
-                  
+                  <button onClick={() => updateCalc('*')}>X</button>
               </div>
              
 
